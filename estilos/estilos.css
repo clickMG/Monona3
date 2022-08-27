@@ -64,10 +64,8 @@ main .promociones{
     text-align: center;
     padding-top: 20px;
     
-
     animation-name: text-inicio;
     animation-duration: 2s;
-    
 }
 @keyframes text-inicio {
     0%{opacity: 0%;}
@@ -81,8 +79,12 @@ main .promociones{
     font-family: var(--fuentePpal);
 }
 
+.titulo2{
+    font-size: 30px;
+}
+
 .bi-truck , .bi-credit-card-2-back, .bi-emoji-laughing{
-    color: rgb(0, 0, 0);
+    color: var(--colorPpal);
     font-size: 50px;
     margin: 5px;
 }
@@ -90,11 +92,29 @@ main .promociones{
 .promo{
     border: solid 3px var(--colorPpal);
     margin: 10px 10px;
-
+    background-color: rgb(37, 37, 37);
 }
-
+.contenedor-promos{
+    padding-bottom: 100px;
+}
+.promo .fte-ppal{
+    color: var(--colorPpal);
+}
+.promo p, .card p{
+    font-size: 25px;
+}
 .card{
     border: none;
+}
+.contenedor-img img{
+    width: 100%;
+    
+    animation-name: imagenAnimada;
+    animation-duration: 4s;
+}
+@keyframes imagenAnimada {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
 }
 
 /* FOOTER */
@@ -105,12 +125,11 @@ main .promociones{
     text-decoration: none;
     
 }
-
 .pie-redes a:link{
     color: rgb(199, 170, 77);
 }
 .pie-redes a:visited{
-    color: rgb(199, 170, 77);
+    color: rgb(0, 0, 0);
 }
 .bi-facebook:hover{
     color: rgb(83, 89, 179);
@@ -172,9 +191,32 @@ form .enviar{
     margin: auto;
     
 }
+/* .item{
+    border: solid 1px rgb(0, 0, 0);
+    max-height: 250px;
+
+}
+.item img{
+    width: 180px;
+    margin: auto;
+} */
+
+/* NOSOTROS */
+.tarjeta-rot{
+    animation-name: tarj-rot;
+    animation-duration: 0.3s;
+}
+div .text-nos{
+   font-size: 15px !important;
+}
 
 
-
+@keyframes tarj-rot {
+    0%{transform: rotate(0);}
+    25%{transform: rotate(1deg);}
+    75%{transform: rotate(-1deg);}
+    100%{transform: rotate(0deg);}
+}
 
 @media screen and (min-width: 768px){
     main .texto-inicio{
@@ -192,5 +234,9 @@ form .enviar{
     .titulo{
         font-size:  50px;
     }
+
+    div .text-nos{
+        font-size: 25px !important;
+     }
 }
 
