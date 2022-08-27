@@ -206,9 +206,9 @@ form .enviar{
     animation-name: tarj-rot;
     animation-duration: 0.3s;
 }
-div .text-nos{
+/* div .text-nos{
    font-size: 15px !important;
-}
+} */
 
 
 @keyframes tarj-rot {
@@ -235,8 +235,8 @@ div .text-nos{
         font-size:  50px;
     }
 
-    div .text-nos{
+    /* div .text-nos{
         font-size: 25px !important;
-     }
+     } */
 }
 
